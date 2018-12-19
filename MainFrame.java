@@ -247,8 +247,6 @@ public class MainFrame extends JFrame implements Runnable, KeyListener
 				
 				double dotProduct = normal.x * light.x + normal.y * light.y + normal.z * light.z;
 				
-				System.out.println(dotProduct);
-				
 				Triangle triProjected = new Triangle(new Point(), new Point(), new Point());
 				
 				// Project triangles from 3D to 2D
