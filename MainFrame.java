@@ -280,7 +280,7 @@ public class MainFrame extends JFrame implements Runnable, KeyListener
 				yPoints[1] = (int)triProjected.getPoint(1).y;
 				yPoints[2] = (int)triProjected.getPoint(2).y;
 				
-				g.setColor(new Color((int)(dotProduct * 255) % 256, (int)(dotProduct * 255) % 256, (int)(dotProduct * 255) % 256));  // % 255 its because of the bug
+				g.setColor(new Color((int)(dotProduct * 255), (int)(dotProduct * 255), (int)(dotProduct * 255)));
 				g.fillPolygon(xPoints, yPoints,3);
 				
 			/*	g.setColor(Color.BLACK);
